@@ -10,11 +10,15 @@ import Menu from "@material-ui/core/Menu";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import MoreIcon from "@material-ui/icons/MoreVert";
 import HomeIcon from "@material-ui/icons/Home";
 import MenuIcon from "@material-ui/icons/Menu";
+import Button from "@material-ui/core/Button";
+import PhonePausedIcon from "@material-ui/icons/PhonePaused";
 import "./Header.css";
-
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -23,13 +27,6 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
-    },
-  },
-
-  sectionDesktop: {
-    display: "none",
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
     },
   },
   sectionMobile: {
@@ -142,7 +139,10 @@ const Header = () => {
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span class="navbar-toggler-icon"> <MenuIcon /> </span>
+                  <span class="navbar-toggler-icon">
+                    {" "}
+                    <MenuIcon />{" "}
+                  </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
@@ -172,43 +172,20 @@ const Header = () => {
             </nav>
           </div>
           <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
+          <div>
+            <InstagramIcon />
+            <FacebookIcon />
+            <LinkedInIcon />
+            <Badge badgeContent={17} color="secondary">
+              <ShoppingBasketIcon />
+            </Badge>
           </div>
-          <div className={classes.sectionMobile}>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
-          </div>
-<div className="button-header">
-  
-</div>
 
+          <div className="button-header">
+            <Button variant="contained" endIcon={<PhonePausedIcon />}>
+              Hire me
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

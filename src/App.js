@@ -13,10 +13,10 @@ const App = () => {
     <>
       <Container>
         <Grid container spacing={2} justifyContent="">
-          <Grid item xs={12} sm={12} md={6} lg={3}>
+          <Grid item xs={12} sm={12} md={4} lg={3}>
             <Info />
           </Grid>
-          <Grid item xs={12} lg={8} sm={12} md={6}>
+          <Grid item xs={12} lg={8} sm={12} md={8}>
             <Header  />
             <Routes>
               <Route path="/" element={<Resume />} exact />

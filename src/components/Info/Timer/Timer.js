@@ -9,6 +9,29 @@ import FilterVintageOutlinedIcon from "@material-ui/icons/FilterVintageOutlined"
 import "./Timer.css";
 import { Typography } from "@material-ui/core";
 const Timer = () => {
+  const style = {
+    /* items  */
+    MuiTimelineItemroot: {
+      display: "flex",
+      position: "relative",
+      listStyle: "none",
+      minHeight: "50px",
+    },
+    /* dot  in items */
+    MuiTimelineDotroo: {
+      backgroundColor: "var(--main-colo)",
+      boxShadow: " inset 1px 1px 1px white",
+    },
+    /* content  in items*/
+    MuiTimelineContentrooth5: {
+      color: "gray",
+      fontSize: " 14px",
+      textTransform: "capitalize",
+    },
+    /* span in typography  in items */
+    MuiTimelineContentroothspan: { color: "rgb(61, 60, 60)" },
+  };
+
   return (
     <div>
       <Timeline align="left" xs={12}>
@@ -29,49 +52,56 @@ const Timer = () => {
           <TimelineContent></TimelineContent>
         </TimelineItem>
 
-        <TimelineItem>
+        <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
-            <TimelineDot />
+            <TimelineDot style={style.MuiTimelineDotroo} />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h5">
-              <span> Name: </span>Abrar Muthanna Rakea
+            <Typography variant="h5" style={style.MuiTimelineContentrooth5}>
+              <span style={style.MuiTimelineContentroothspan}> Name: </span>
+              Abrar Muthanna Rakea
             </Typography>
           </TimelineContent>
         </TimelineItem>
 
-        <TimelineItem>
+        <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
-            <TimelineDot />
+            <TimelineDot style={style.MuiTimelineDotroo} />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h5">
-              <span> Birthday : </span> 31 october 1997
+            <Typography variant="h5" style={style.MuiTimelineContentrooth5}>
+              <span style={style.MuiTimelineContentroothspan}>
+                
+                Birthday :
+              </span>
+              31 october 1997
             </Typography>
           </TimelineContent>
         </TimelineItem>
 
-        <TimelineItem>
+        <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
-            <TimelineDot />
+            <TimelineDot style={style.MuiTimelineDotroo} />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h5">
-              <span> job : </span> freelancer
+            <Typography variant="h5" style={style.MuiTimelineContentrooth5}>
+              <span style={style.MuiTimelineContentroothspan}> job : </span>
+              freelancer
             </Typography>
           </TimelineContent>
         </TimelineItem>
 
-        <TimelineItem>
+        <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
-            <TimelineDot />
+            <TimelineDot style={style.MuiTimelineDotroo} />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h5" style={{ textTransform: "none" }}>
-              <span> Email </span>:abraralrawi97@gmail
+            <Typography variant="h5" style={style.MuiTimelineContentrooth5}>
+              <span style={style.MuiTimelineContentroothspan}> Email </span>
+              :abraralrawi97@gmail
             </Typography>
           </TimelineContent>
         </TimelineItem>
