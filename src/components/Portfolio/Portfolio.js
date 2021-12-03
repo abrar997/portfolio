@@ -1,7 +1,7 @@
 import React from 'react'
-
+import './Portfolio.css'
 const Portfolio = () => {
-    return <div>Portfolio</div>;
+    return <div className="Portfolio">Portfolio</div>;
 }
 
 export default Portfolio

@@ -1,4 +1,14 @@
-/* *{padding:0 !important;} */
-body{
-    margin-top: 100px;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500&family=Libre+Baskerville&family=Slabo+27px&display=swap');
+body {
+  margin-top: 40px;
+  background-color: rgba(238, 238, 238, 0.486);
+font-family: 'EB Garamond', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Slabo 27px', serif;
+}
+:root {
+  --main-colo: rgb(211, 0, 109);
+  --main--hover-btn:rgb(146, 17, 67);
+ --main-borderRad: 9px;
+
 }

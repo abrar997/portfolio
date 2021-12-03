@@ -1,0 +1,35 @@
+header {
+  background-color: white;
+}
+
+.MuiToolbar-root {
+  background-color: white;
+  color: gray;
+}
+
+.home-icon {
+  background-color: var(--main-colo);
+  border-radius: 0%;
+  color: white;
+  margin-left: -24px;
+  height: 64px;
+  width: 60px;
+  font-size: 20px;
+}
+
+.home-icon:hover {
+  background: var(--main--hover-btn);
+}
+nav .nav-item {
+  margin-left: 10px;
+  font-size: 21px;
+  border-bottom: none;
+  text-decoration: none;
+}
+a,a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:focus {
+border-bottom: 1px solid  var(--main-colo); 
+color: var(--main-colo)}

@@ -1,0 +1,33 @@
+.info {
+  box-shadow: 1px 1px 16px rgb(211, 211, 211);
+  background-color: white;
+  padding: 10px;
+  border-radius: var(--main-borderRad);
+}
+
+.info h3 {
+  color: black;
+  font-size: 28px;
+  padding-top: 30px;
+}
+.info h5 {
+  color: gray;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.image-info {
+  width: 100%;
+  clip-path: polygon(0 90%, 100% 0, 100% 94%, 0% 100%);
+  -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+  margin: auto;
+  margin-top: 40px;
+}
+.image-info img {
+  width: 100%;
+  background: var(--main-colo);
+}
+.timer-info {
+  margin-left: auto;
+  margin-top: -20px;
+  margin-left: -220px;
+}

@@ -1,0 +1,13 @@
+.button-info-cv{margin:auto;
+margin-bottom: 20px;
+margin-left: 20px;}
+.button-info-cv .MuiButtonBase-root {background-color: var(--main-colo);
+border-radius: 18px;
+color: white;
+width: 80%;
+padding: 10px;
+
+}
+
+
+.button-info-cv .MuiButtonBase-root:hover{background-color:var(--main--hover-btn);}

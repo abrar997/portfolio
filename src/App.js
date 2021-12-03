@@ -1,27 +1,26 @@
-import React, { Fragment } from "react";
+import React  from "react";
+import { Route, Routes } from "react-router";
 import { Container, Grid } from "@material-ui/core";
-import "./App.css";
 import Info from "./components/Info/Info";
 import Resume from "./components/Resume/Resume";
-import { Route, Routes } from "react-router";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Header from "./components/Header/Header";
-import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import "./App.css";
+
 const App = () => {
   return (
     <>
       <Container>
-        <Grid container spacing={2} justifyContent="space-between">
-          <Grid item xs={12} lg={3} style={{ background: "#eeee" }}>
+        <Grid container spacing={2} justifyContent="">
+          <Grid item xs={12} sm={12} md={6} lg={3}>
             <Info />
           </Grid>
-          <Grid item xs={12} lg={8} style={{ background: "#eee" }}>
-            <Header />
+          <Grid item xs={12} lg={8} sm={12} md={6}>
+            <Header  />
             <Routes>
               <Route path="/" element={<Resume />} exact />
-
-              <Route path="/Resume" element={<Resume />}  />
+              <Route path="/Resume" element={<Resume />} />
               <Route path="/Portfolio" element={<Portfolio />} />
             </Routes>
             <Footer />

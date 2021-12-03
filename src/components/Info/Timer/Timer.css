@@ -1,0 +1,25 @@
+/* items  */
+.MuiTimelineItem-root {
+    display: flex;
+    position: relative;
+    list-style: none;
+    min-height: 50px;
+}
+
+/* separator in items*/
+.MuiTimelineConnector-root {
+  background-color: #eee;
+}
+/* dot  in items */
+.MuiTimelineDot-root {
+  background-color: var(--main-colo);
+  box-shadow: inset 1px 1px 1px white;
+}
+/* content  in items*/
+.MuiTimelineContent-root h5 {
+  color: gray;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+/* span in typography  in items */
+.MuiTimelineContent-root h5 span{color: rgb(61, 60, 60);}
