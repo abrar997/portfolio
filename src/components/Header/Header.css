@@ -1,55 +1,62 @@
 header {
   background-color: white;
-border-radius: var(--main-borderRad);
+  border-radius: var(--main-borderRad);
+  height: 50px;
 }
-header .MuiSvgIcon-root {
-    fill: currentColor;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    font-size: 1.5rem;
-    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    flex-shrink: 0;
-    user-select: none;
-}
+/* header .MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+} */
 
 .MuiToolbar-root {
   background-color: white;
   color: gray;
 }
-
-.home-icon {
+/* MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart */
+header .home .MuiIconButton-edgeStart {
   background-color: var(--main-colo);
   border-radius: 0%;
   color: white !important;
   margin-left: -24px;
-  height: 64px;
+  height: 67px;
   width: 60px;
-  font-size: 20px;
+  margin-top: 13px;
 }
 
-.home-icon:hover {
+header .home .MuiIconButton-edgeStart:hover {
   background: var(--main--hover-btn);
 }
-nav .nav-item {
+#navbarNav .nav-item {
   margin-left: 10px;
   font-size: 21px;
   border-bottom: none;
   text-decoration: none;
 }
-a,a:hover {
+#navbarNav a,
+a:hover {
   text-decoration: none;
   color: black;
 }
-a:focus {
-border-bottom: 1px solid  var(--main-colo); 
-color: var(--main-colo)}
+#navbarNav a:focus {
+  border-bottom: 1px solid var(--main-colo);
+  color: var(--main-colo);
+}
 
-.button-header button {border:1px solid var(--main-colo);
-color:var(--main-colo);
-border-radius: 20px;
-background: transparent;
-margin-right: -20px;
-margin-left: 10px;}
-.button-header button:hover{background: var(--main--hover-btn);
-color: white;}
+.button-header button {
+  border: 1px solid var(--main-colo);
+  color: var(--main-colo);
+  border-radius: 20px;
+  background: transparent;
+  margin-right: -20px;
+  margin-left: 10px;
+}
+.button-header button:hover {
+  background: var(--main--hover-btn);
+  color: white;
+}

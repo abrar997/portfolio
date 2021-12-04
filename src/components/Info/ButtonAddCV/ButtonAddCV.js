@@ -5,8 +5,10 @@ import GetAppIcon from "@material-ui/icons/GetApp";
 const ButtonAddCV = () => {
     return (
       <div className="button-info-cv">
-        <Button variant="contained" endIcon={<GetAppIcon />}>
+        <Button variant="contained">
+        
           download cv
+          <GetAppIcon  / >
         </Button>
       </div>
     );

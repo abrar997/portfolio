@@ -14,11 +14,8 @@ import HomeIcon from "@material-ui/icons/Home";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import PhonePausedIcon from "@material-ui/icons/PhonePaused";
-import "./Header.css";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import "./Header.css";
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -124,9 +121,11 @@ const Header = () => {
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className="home-icon">
+          <p className="home">
+          <IconButton edge="start">
             <HomeIcon />
           </IconButton>
+</p>
           <div>
             <nav class="navbar navbar-expand-lg ">
               <div class="container-fluid">
@@ -152,7 +151,6 @@ const Header = () => {
                       aria-current="page"
                       href="#"
                     >
-                      {" "}
                       <li class="nav-item">Resume</li>
                     </NavLink>
 
@@ -172,11 +170,13 @@ const Header = () => {
             </nav>
           </div>
           <div className={classes.grow} />
+
           <div>
-            <InstagramIcon />
-            <FacebookIcon />
-            <LinkedInIcon />
-            <Badge badgeContent={17} color="secondary">
+            <Badge
+              badgeContent={17}
+              style={{ color: "var(--main-colo)", marginLeft: "-30px" }}
+              color="info"
+            >
               <ShoppingBasketIcon />
             </Badge>
           </div>

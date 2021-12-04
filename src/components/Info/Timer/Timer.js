@@ -29,12 +29,13 @@ const Timer = () => {
       textTransform: "capitalize",
     },
     /* span in typography  in items */
-    MuiTimelineContentroothspan: { color: "rgb(61, 60, 60)" },
+    MuiTimelineContentroothspan: { color: "rgb(61, 60, 60)",textTransform:"none" },
   };
 
   return (
     <div>
       <Timeline align="left" xs={12}>
+     {/* icon */}
         <TimelineItem>
           <TimelineSeparator style={{ height: "90px" }}>
             <TimelineDot
@@ -51,7 +52,7 @@ const Timer = () => {
           </TimelineSeparator>
           <TimelineContent></TimelineContent>
         </TimelineItem>
-
+{/* name */}
         <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
             <TimelineDot style={style.MuiTimelineDotroo} />
@@ -64,7 +65,7 @@ const Timer = () => {
             </Typography>
           </TimelineContent>
         </TimelineItem>
-
+{/* birth */}
         <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
             <TimelineDot style={style.MuiTimelineDotroo} />
@@ -80,7 +81,7 @@ const Timer = () => {
             </Typography>
           </TimelineContent>
         </TimelineItem>
-
+{/* job */}
         <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
             <TimelineDot style={style.MuiTimelineDotroo} />
@@ -93,15 +94,14 @@ const Timer = () => {
             </Typography>
           </TimelineContent>
         </TimelineItem>
-
+{/* email */}
         <TimelineItem style={style.MuiTimelineItemroot}>
           <TimelineSeparator>
             <TimelineDot style={style.MuiTimelineDotroo} />
           </TimelineSeparator>
           <TimelineContent>
             <Typography variant="h5" style={style.MuiTimelineContentrooth5}>
-              <span style={style.MuiTimelineContentroothspan}> Email </span>
-              :abraralrawi97@gmail
+              <span style={style.MuiTimelineContentroothspan}> Email</span>:abraralrawi97@gmail
             </Typography>
           </TimelineContent>
         </TimelineItem>
